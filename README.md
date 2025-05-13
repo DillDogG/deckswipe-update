@@ -1,12 +1,21 @@
 # DeckSwipe
 
-This is a skeleton for a simple card game. There are 4 gameplay resources (predefined as Coal, Food, Health, Hope), each contributing to the chances of survival for the player's city. Choices that the player makes through swiping each card left or right will influence those resources in various ways. If any one of the resources depletes (reaches zero), the game is lost and reset. The player's objective is to make decisions such that depletion doesn't happen, and the city survives, for as long as they can manage.
+This is a skeleton for a simple card game. There are 5 gameplay resources (predefined as Coal, Food, Health, Hope, and Population), each contributing to the chances of survival for the player's city. Choices that the player makes through swiping each card left or right will influence those resources in various ways. If any one of the resources depletes (reaches zero), the game is lost and reset. The player's objective is to make decisions such that depletion doesn't happen, and the city survives, for as long as they can manage.
 
 The core mechanics and visuals are heavily based on Reigns, and its clone, Lapse: The Forgotten Future. The sample content is mostly inspired by Frostpunk and its neverending winter.
 
 Created with Unity on Linux, primarily targetting Android.
 
 ![Screen capture of the game running on Android](screencap-android.gif)
+
+## Updates Added
+
+This fork has added the following items to the game.
+- Population resource: This resource is never directly changed by any cards, and instead is changed based on what other stats are whenever a card is resolved.
+- Weather: This adds a new card that warns about a specific weather condition that is approaching in a few cards. Then after a few cards the weather is activated, warned with another card. Weather can add or subtract from resources every card it is active, and will last for a predetermined time. Only 1 weather can be active at a time.
+- Card Rebalancing: Many cards had values changed to make it more likely to lose the game. Additionally, more cards were added to make more difficult decisions.
+- A tutorial and story mode was added. These are different versions of the base game that only last for a set number of cards. The tutorial has preset cards that teach the game, while the story mode is random like the endless mode.
+- Further changes listed under the "Our Contribution (Brisk)" section at the bottom of the page.
 
 ## Contributing
 
